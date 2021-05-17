@@ -87,18 +87,10 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
-CREATE TABLE 'users' (
-    'id' INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    'username' VARCHAR(50) NOT NULL UNIQUE,
-    `first_name` varchar(100) NOT NULL,
-    `last_name` varchar(100) NOT NULL,
-    'password' VARCHAR(255) NOT NULL,
-    'created_at' DATETIME DEFAULT CURRENT_TIMESTAMP
-);
 
-INSERT INTO `user` (`user_id`, `first_name`, `last_name`,`password`, `register_date`) VALUES
-(1, 'Bilel', 'Taboubi','123' ,'2020-03-28 13:07:17'),
-(2, 'Aymen', 'Gabbouj','123' ,'2020-03-28 13:07:17');
+INSERT INTO `users` (`id`,'username', `first_name`, `last_name`,`password`, `created_at`) VALUES
+(1,'bilel20', 'Bilel', 'Taboubi','123' ,'2020-03-28 13:07:17'),
+(2,'aymen20','Aymen', 'Gabbouj','123' ,'2020-03-28 13:07:17');
 
 -- --------------------------------------------------------
 

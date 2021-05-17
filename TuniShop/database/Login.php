@@ -24,7 +24,7 @@ class Login
             
             if ($username != null && $password!=null){
                 
-                $query="SELECT user_id FROM user WHERE first_name='$username'  AND password='$password'";
+                $query="SELECT * FROM user WHERE first_name='$username'  AND password='$password'";
                 $result = $this->db->con->query($query);                
                
                 if ($result)
